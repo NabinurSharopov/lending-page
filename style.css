@@ -2125,6 +2125,26 @@ display: block;
     }
     .dropdown{
   min-width: 180px;
-  
+    }
+    .h14{
+      margin-top: 10px;
+    }
+    .div9{
+      margin-top: -49px;
+    }
+    .div16{
+      margin-left: -22px;
+    }
+    .div17{
+      margin-left: 20px;
+    }
+    .p18{
+      margin-left: -0px;
+    }
+    .div20{
+      margin-left: 21px;
+    }
+    .div7{
+      width: 350px;
     }
 }
