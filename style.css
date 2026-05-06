@@ -2120,4 +2120,11 @@ display: block;
     .img58{
       margin-top: -90px;
     }
+    .lang-option{
+      padding: 7px;
+    }
+    .dropdown{
+  min-width: 180px;
+  
+    }
 }
