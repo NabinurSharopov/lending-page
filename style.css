@@ -2077,6 +2077,21 @@ display: block;
     margin-left: 44px;
    }
    .p22{
-    font-size: 12px;
+    font-size: 111px;
    } 
+}
+@media (max-width: 402px) {
+    .p22{
+      font-size: 13px;
+    }   
+}
+@media (max-width: 391px) {
+     .p22{
+      font-size: 13px;
+    } 
+}
+@media (max-width: 399px) {
+     .p22{
+      font-size: 12px;
+    } 
 }
