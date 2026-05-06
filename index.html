@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="page-1">
+      <nav class="nav1">
+<div class="nav-inner">
+  <a href="./index.html" class="logo-1" style="cursor: pointer; text-decoration: none;">
+    <img class="img200" src="./images/image 200.svg" alt="" />
+    <div>
+      <img class="Toshkent" src="images/boshlogo.svg" alt="">
+    </div>
+  </a>
+    <ul class="ul1">
+      <li class="li1" data-target="about">Biz haqimizda</li>
+      <li class="li1" data-target="services">Xizmatlar</li>
+      <li class="li1" data-target="blog">Blog</li>
+      <li class="li1" data-target="faq">FAQ</li>
+      <li class="li1" data-target="contact">Bog‘lanish</li>
+    </ul>
+    <div class="div2">
+      <a class="phone-btn" href="tel:+998712000770">
+        <img src="./images/tel.svg" alt="" />
+        <span class="phone-number">+998 71 200 07 70</span>
+      </a>
+  
+   <details id="dd">
+    <summary>
+      <img id="btnFlag" src="./images/flag.svg" alt="" style="width: 28px; height: 28px; border-radius: 50%; object-fit: cover;" />
+      <span id="btnCode">UZ</span>
+      <svg class="chevron" viewBox="0 0 14 14">
+        <polyline points="2,4 7,10 12,4" />
+      </svg>
+    </summary>
+    <div class="dropdown">
+      <div class="lang-option active" onclick="pick(this, './images/flag.svg', 'UZ')">
+        <span class="flag"><img src="./images/flag.svg" alt="" /></span>
+        <span>O'zbekcha</span>
+        <span class="check">✓</span>
+      </div>
+      <div class="lang-option" onclick="pick(this, './images/flag.svg', 'УЗ')">
+        <span class="flag"><img src="./images/flag.svg" alt="" /></span>
+        <span>Ўзбекча</span>
+        <span class="check">✓</span>
+      </div>
+       <div class="lang-option" onclick="pick(this, 'https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13', 'QQ')">
+        <span class="flag"><img style="width: 30px;" src="https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13" alt="" /></span>
+        <span>Qoraqalpoq</span>
+        <span class="check">✓</span>
+      </div>
+      <div class="lang-option" onclick="pick(this, './images/en.svg', 'EN')">
+        <span class="flag"><img src="./images/en.svg" alt="" /></span>
+        <span>English</span>
+        <span class="check">✓</span>
+      </div>
+      <div class="lang-option" onclick="pick(this, './images/ru.svg', 'RU')">
+        <span class="flag"><img src="./images/ru.svg" alt="" /></span>
+        <span>Русский</span>
+        <span class="check">✓</span>
+      </div>
+    </div>
+  </details>
+  
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+</div>
+
+
+     </nav>
+
+     <div class="nav-mobile" id="navMobile">
+  <ul class="ul-mobile">
+    <li class="li1">Biz haqimizda</li>
+    <li class="li1">Xizmatlar</li>
+    <li class="li1">Blog</li>
+    <li class="li1">FAQ</li>
+    <li class="li1">Bog‘lanish</li>
+  </ul>
+     </div>
+      
+        <section class="page-1-ichi">
+          <div>
+            <h1 class="h2">Litsenziyadan Menejmentgacha — Biz Yoningizda</h1>
+            <br /><br />
+            <p class="p3">
+              Kasalxona yoki laboratoriya ochish murakkabmi? Biz bu jarayonni
+              sizning yelkangizdan olamiz — litsenziyadan tortib menejmentgacha,
+              har bir bosqichda yoningizda.
+            </p>
+            <div class="btns">
+              <a href="./Xizmatlar.html">
+                <button class="btn1">
+                  Xizmatlar bilan tanishing
+                  <img src="./images/img5.png" alt="" />
+                </button>
+              </a>
+              <a href="#div13">
+                <button class="btn2">
+                  Ariza qoldirish <img src="./images/img6.png" alt="" />
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+      
+      <section class="page2">
+        <div class="div3">
+          <img src="./images/img27.svg" alt="" />
+          <div>
+            <h1 class="h3">150+</h1>
+            <p class="p4" id="stat-1">Klinika ishga tushirilgan</p>
+          </div>
+        </div>
+        <div class="div3">
+          <img src="./images/img29.svg" alt="" />
+          <div>
+            <h1 class="h3">50+</h1>
+            <p class="p4" id="stat-2">Akreditatsiya o’tkazilgan</p>
+          </div>
+        </div>
+        <div class="div3">
+          <img src="./images/img30.svg" alt="" />
+          <div>
+            <h1 class="h3">100+</h1>
+            <p class="p4" id="stat-3">Mutaxassis jamoasi</p>
+          </div>
+        </div>
+        <div class="div3">
+          <img src="./images/img31.svg" alt="" />
+          <div>
+            <h1 class="h3">15+ yil</h1>
+            <p class="p4" id="stat-4">Tajriba</p>
+          </div>
+        </div>
+      </section>
+      <section class="page3"  id="about">
+        <div class="div4">
+          <h1 class="h5">Biz <span class="span1">haqimizda</span></h1>
+          <p class="p5" id="about-desc">
+            Biz — Tashkent Healthcare LLC, tibbiyot va sog'liqni saqlash
+            bo'yicha maslahat xizmatlari, shuningdek kasalxona va
+            laboratoriyalarni boshqarish sohasida ixtisoslashgan kompaniyamiz.
+            Biz quyidagi yo'nalishlar bo'yicha konsultatsiya xizmatlarini taqdim
+            etamiz:
+          </p>
+          <ul class="ul2">
+            <li>Qurilish</li>
+            <li>Litsenziyalash</li>
+            <li>Akkreditatsiya</li>
+            <li>Foydalanishga topshirish (commissioning)</li>
+            <li>Kadrlar boshqaruvi (HR)</li>
+            <li>Umumiy menejment</li>
+          </ul>
+          <br /><br /><br /><br />
+          <h3 class="h6">
+            Nima uchun bizni <span class="span1">tanladilar?</span>
+          </h3>
+          <p class="p6">
+            Yillar davomida to'plangan tajriba, isbotlangan natijalar va
+            ishonchli jarayon.
+          </p>
+        </div>
+        <img src="./images/img11.png" alt="" />
+      </section>
+      <section class="page4">
+        <div class="div5">
+          <img src="./images/img23.svg" alt="" />
+          <h1 class="h7">"Kalit tayyor" kompleks yondashuv</h1>
+          <p class="p7">
+            Boshidan oxirigacha barcha jarayonlarni biz boshqaramiz.
+          </p>
+        </div>
+        <div class="div5">
+          <img src="./images/img24.svg" alt="" />
+          <h1 class="h7">
+            Har bir bosqichda xatarlar va xatolarni kamaytirish
+          </h1>
+          <p class="p7">
+            Muammolarni oldindan aniqlab, xatolarning oldini olamiz.
+          </p>
+        </div>
+        <div class="div5">
+          <img src="./images/img25.svg" alt="" />
+          <h1 class="h7">Mijoz vaqti va resurslarini tejash</h1>
+          <p class="p7">
+            Samarali yondashuv orqali vaqt va xarajatlarni kamaytiramiz.
+          </p>
+        </div>
+        <div class="div5">
+          <img src="./images/img26.svg" alt="" />
+          <h1 class="h7">Tibbiy litsenziyalash sohasida amaliy tajriba</h1>
+          <p class="p7">
+            Litsenziyalash jarayonlarida ishonchli va tajribali hamkoringiz.
+          </p>
+        </div>
+      </section>
+      <br />
+      <section class="page5">
+        <div class="div24">
+          <h1 class="h8">Tashkilot haqida</h1>
+          <p class="p8">
+            Tashkent Healthcare tashkiloti uchun bir sahifali korporativ
+            veb-sayt yaratish. Sayt quyidagi vazifalarni bajaradi: tashkilot
+            haqida ma'lumot berish, ko'rsatiladigan xizmatlarni taqdim etish,
+            potentsial mijozlarda ishonch hosil qilish, ariza qoldirish
+            imkoniyatini ta'minlash va tashkilot bilan bog'lanish yo'llarini
+            ko'rsatish.
+          </p>
+        </div>
+        <img class="img58" src="./images/img22.svg" alt="">
+      </section>
+      <h1 class="h9">Hamkorlarimiz</h1>
+      <section class="page6">
+        <div class="marquee-container">
+          <div class="marquee-track">
+            <img src="./images/img18.svg" alt="" />
+            <img src="./images/img19.svg" alt="" />
+            <img src="./images/img20.svg" alt="" />
+            <img src="./images/img21.svg" alt="" />
+             <img src="./images/img18.svg" alt="" />
+            <img src="./images/img19.svg" alt="" />
+            <img src="./images/img20.svg" alt="" />
+            <img src="./images/img21.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <br /><br /><br />
+      <h1 class="h10" id="services">Xizmatlar</h1>
+      <br />
+      <section class="page7" >
+        <div class="div6">
+          <img src="/images/img11.svg" alt="" />
+          <div>
+            <h2 class="h11">
+              Tibbiy muassasa (LPU) turlari va litsenziya turlari bo'yicha
+              maslahat
+            </h2>
+            <br />
+            <p class="p9">
+              Tibbiy faoliyat va litsenziya olishni tartibga soluvchi
+              normativ-huquqiy hujjatlar bilan tanishtirish
+            </p>
+          </div>
+        </div>
+        <div class="div6">
+          <img src="/images/img13.svg" alt="" />
+          <div>
+            <h2 class="h11">
+              LPU joylashuvi uchun yer uchastkasini tanlash bo'yicha maslahat
+            </h2>
+            <br />
+            <p class="p9">
+              LPU joylashtirilishi ko'zda tutilgan yer uchastkasini tanlashni
+              tartibga soluvchi normativ-huquqiy hujjatlar bilan tanishtirish
+            </p>
+          </div>
+        </div>
+        <div class="div6">
+          <img src="/images/img12.svg" alt="" />
+          <div>
+            <h2 class="h11">
+              LPU turi va unga qo'yiladigan talablar bo'yicha maslahat
+            </h2>
+            <br />
+            <p class="p9">
+              LPU joylas tanlashni tartibga soluvchi normativ-huquqiy hujjatlar
+              bilan tanishtirish.....
+            </p>
+          </div>
+        </div>
+        <div class="div6">
+          <img src="/images/img14.svg" alt="" />
+          <div>
+            <h2 class="h11">
+              Tibbiy mutaxassisliklarni tanlash bo'yicha maslahat
+            </h2>
+            <br />
+            <p class="p9">
+              U yoki bu yo'nalishlarni tanlashda maqsadga muvofiqlik va tijorat
+              manfaati haqida ma'lumot berish
+            </p>
+          </div>
+        </div>
+        <div class="div6">
+          <img src="/images/img16.svg" alt="" />
+          <div>
+            <h2 class="h11">Loyihalash uchun Texnik topshiriq tayyorlash</h2>
+            <p class="p9">
+              Loyiha tashkilotiga taqdim etish uchun LPU loyihalashga texnik
+              topshiriq tayyorlash
+            </p>
+          </div>
+        </div>
+        <a href="./Xizmatlar.html">
+          <div class="div7">
+            <h1 class="h12">Barcha xizmatlarni ko‘rish</h1>
+            <img src="./images/img17.svg" alt="" />
+          </div>
+        </a>
+      </section> 
+      <br /><br /><br /><br  />
+      <div id="blog">
+        <h1 class="h10" >Bizning <span class="span1">mijozlarimiz</span></h1>
+        <p class="p10">
+          Tibbiyot sifati va jarayonlarini yaxshilash uchun kerakli barcha
+          xizmatlar bir joyda, qulay va samarali yechimlar bilan.
+        </p>
+      </div>
+      <br /><br />
+      <section>
+        <div class="marquee-container">
+           <div class="marquee-track-left">
+            <div class="div8">
+              <img src="./images/img7.svg" alt="">
+            </div>
+            <div class="div8">
+              <img src="./images/img28.svg" alt="" />
+            </div>
+             <div class="div8">
+              <img src="./images/img9.svg" alt="" />
+            </div>
+               <div class="div8">
+              <img src="./images/img28.svg" alt="" />
+            </div>
+                <div class="div8">
+              <img src="./images/img10.svg" alt="" />
+            </div>
+                 <div class="div8">
+              <img src="./images/img7.svg" alt="">
+            </div>
+            <div class="div8">
+              <img src="./images/img28.svg" alt="" />
+            </div>
+             <div class="div8">
+              <img src="./images/img9.svg" alt="" />
+            </div>
+               <div class="div8">
+              <img src="./images/img28.svg" alt="" />
+            </div>
+                <div class="div8">
+              <img src="./images/img10.svg" alt="" />
+            </div>
+          </div>
+          <br />
+         <div class="marquee-track-right">
+  <!-- SET 1 -->
+  <div class="div8"><img src="./images/img7.svg" alt=""></div>
+  <div class="div8"><img src="./images/img28.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img9.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img28.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img10.svg" alt="" /></div>
+  <!-- SET 2 -->
+  <div class="div8"><img src="./images/img7.svg" alt=""></div>
+  <div class="div8"><img src="./images/img28.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img9.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img28.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img10.svg" alt="" /></div>
+  <!-- SET 3 -->
+  <div class="div8"><img src="./images/img7.svg" alt=""></div>
+  <div class="div8"><img src="./images/img28.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img9.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img28.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img10.svg" alt="" /></div>
+  <!-- SET 4 -->
+  <div class="div8"><img src="./images/img7.svg" alt=""></div>
+  <div class="div8"><img src="./images/img28.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img9.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img28.svg" alt="" /></div>
+  <div class="div8"><img src="./images/img10.svg" alt="" /></div>
+</div>
+        </div>
+      </section>
+      <section class="page8" >
+        <h1 class="h13" id="faq">
+          FAQ - <span class="span1">savollar va javoblar</span>
+        </h1>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question"
+                >Qanday qilib shifokorga yozilish mumkin?</span
+              >
+              <button class="faq-btn">+</button>
+            </div>
+            <div class="faq-answer">
+              Veb-saytdagi forma orqali ariza qoldirishingiz, +998 71 XXX-XX-XX
+              raqamiga qo'ng'iroq qilishingiz yoki klinikaga bevosita tashrif
+              buyurishingiz mumkin. Ariza qabul qilingandan so'ng 30 daqiqa
+              ichida operator siz bilan bog'lanadi.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question"
+                >Klinikada qanday to'lov usullari mavjud?</span
+              >
+              <button class="faq-btn">+</button>
+            </div>
+            <div class="faq-answer">
+              Naqd pul, bank kartasi, onlayn to'lov va bo'lib to'lash
+              imkoniyatlari mavjud.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question"
+                >Tahlil natijalari qachon tayyor bo'ladi?</span
+              >
+              <button class="faq-btn">+</button>
+            </div>
+            <div class="faq-answer">
+              Odatda tahlil natijalari 1-2 ish kuni ichida tayyor bo'ladi.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question"
+                >Chet el fuqarolari ham xizmatdan foydalana oladimi?</span
+              >
+              <button class="faq-btn">+</button>
+            </div>
+            <div class="faq-answer">
+              Ha, chet el fuqarolari ham barcha xizmatlardan foydalana oladi.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question"
+                >Uy sharoitida shifokor chaqirish mumkinmi?</span
+              >
+              <button class="faq-btn">+</button>
+            </div>
+            <div class="faq-answer">
+              Ha, uy sharoitida shifokor chaqirish xizmati mavjud.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question"
+                >Men oldindan qanday uslubni xohlayotganimni bilishim
+                kerakmi?</span
+              >
+              <button class="faq-btn">+</button>
+            </div>
+            <div class="faq-answer">
+              Yo'q, shifokor siz bilan maslahatlashib eng mos uslubni tavsiya
+              qiladi.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page9" id="contact">
+        <div class="div9">
+          <div class="div12">
+            <h1 class="h14">Bog‘lanish uchun</h1>
+            <p class="p12">
+              Siz tizimdan chiqishingiz mumkin bo'lgan quyidagi usullardan
+              foydalangan holda biz bilan bog'laning
+            </p>
+            <br />
+            <a
+              href="https://yandex.com/maps/?text=улица+Мирзакалон+Исмоилий+дом+2+Ташкент"
+              target="_blank"
+            >
+              <div class="div10">
+                <div class="bird" style="margin-left: -9px;">
+                  <img src="./images/img1.svg" alt="" />
+                </div>
+                <div>
+                  <p class="p13">Ofisimizga tashrif buyuring</p>
+                  <div class="div11">
+                    <p class="p14">улица Мирзакалон Исмоилий, дом 2...</p>
+                    <img src="./images/img32.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="div10" style="justify-content: start">
+                <div class="bird">
+                  <img src="./images/img2.svg" alt="" />
+                </div>
+                <div>
+                  <p class="p13">Telefon raqam</p>
+                  <p class="p14">+998 (71) 200 70 07</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://mail.google.com/">
+              <div class="div10" style="justify-content: start">
+                <div class="bird">
+                  <img src="./images/img3.svg" alt="" />
+                </div>
+                <div>
+                  <p class="p13">Elektron pochta manzili</p>
+                  <div class="div11">
+                    <p class="p14" style="margin-left: -28px;">info@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div id="div13" class="div13">
+            <h1 class="h15">Biz bilan aloqa</h1>
+            <p class="p15">
+              Agar sizda biron bir savol bo'lsa yoki ma'lumotga muhtoj
+              bo'lsangiz, biz <br />
+              bilan bog'laning.
+            </p>
+            <br />
+            <form action="/action_page.php">
+              <label for="fname">Ism-familiya</label>
+              <br />
+              <input type="text" placeholder="Ismingizni kiriting" /><br />
+              <label for="fname">Telefon raqam</label><br />
+              <div class="input-wrapper">
+                <img src="./images/img4.svg" alt="uz" class="flag-icon" />
+                <input type="text" placeholder="+998" />
+              </div>
+
+                <div class="div14">
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LfvCNIsAAAAB--xFIZj6KLZidn6n8SaTSmwEUU"
+                  ></div>
+                </div>
+
+              <button class="btn5">
+                Jo‘natish <img src="./images/img6.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+        <footer>
+          <div class="div16">
+            <div class="logo-2">
+              <img src="./images/image 200.svg" alt="" />
+              <div>
+                <h1 class="h1">Tashkent</h1>
+                <p class="p1">Health care</p>
+              </div>
+            </div>
+            <ul class="ul3">
+              <li class="li1" data-target="about">Biz haqimizda</li>
+              <li class="li1" data-target="services">Xizmatlar</li>
+              <li class="li1" data-target="blog">Blog</li>
+              <li class="li1" data-target="faq">FAQ</li>
+              <li class="li1" data-target="contact">Bog‘lanish</li>
+            </ul>
+          </div>
+          <div class="div17">
+            <p class="p17">
+              O'zbekiston Sog'liqni saqlash vazirligi va Tibbiyot muassasalarini
+              litsenziyalash va akkreditatsiya qilish markazi ko'magida tashkil
+              etilgan.
+            </p>
+            <div>
+              <p class="p18">Ijtimoiy tarmoqlar</p>
+              <div class="div18">
+                <div class="oq">
+                  <a href="https://www.instagram.com/eurosunhealthcare/" target="_blank">
+                    <img class="instagram" src="./images/Vector.svg" alt="" />
+                  </a>
+                </div>
+                <div class="oq">
+                  <a href="https://t.me/eurosunhealthcare" target="_blank">
+                    <img class="telegram" src="./images/telegram.svg" alt="" />
+                  </a>
+                </div>
+                <a href="https://www.linkedin.com/" target="_blank">
+                <div class="oq">
+                  <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#26B5FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                   </svg>   
+               </div>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <div class="oq">
+                   <img  class="feasebook" src="./images/feasebook.svg" alt="" />
+                 </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="img59" src="./images/chiziq.png" alt="">
+          <div class="div20">
+            <p class="p18">
+              © 2026 Toshkent Healthcare. Barcha huquqlar himoyalangan.
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px">
+              <p class="p19">Developed by:</p>
+              <img  src="./images/img5.svg" alt="" />
+            </div>
+          </div>
+        </footer>
+        <br><br><br>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+    <div
+      id="cookieBanner"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 20px 30px;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      "
+    >
+      <p
+        style="
+          margin: 0;
+          color: #222;
+          font-size: 15px;
+          font-family: &quot;Inter&quot;, sans-serif;
+        "
+      >
+        "Qabul qilaman" tugmasini bosish orqali siz qurilmangizda
+        <span style="color: #1565c0">cookie-fayllarni</span> saqlashga rozilik
+        bildirasiz.
+      </p>
+      <div style="display: flex; gap: 12px; flex-shrink: 0">
+        <button
+          id="rejectCookie"
+          style="
+            padding: 10px 24px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            background: #f5f5f5;
+            cursor: pointer;
+            font-size: 15px;
+          "
+        >
+          Rad etish
+        </button>
+        <button
+          id="acceptCookie"
+          style="
+            padding: 10px 24px;
+            border: none;
+            border-radius: 50px;
+            background: #1565c0;
+            color: #fff;
+            cursor: pointer;
+            font-size: 15px;
+          "
+        >
+          Qabul qilish
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
