@@ -2095,3 +2095,25 @@ display: block;
       font-size: 12px;
     } 
 }
+@media (max-width: 384px) {
+    .h14{
+      margin-left: 4px;
+    }  
+    .p12{
+      width: 300px;
+      margin-left: 4px;
+    } 
+    .div10{
+      width: 300px;
+      margin-left: 4px;
+    }
+    .btn5{
+      margin-left: 136px;
+    }
+    .p18{
+      width: 300px;
+    }
+    .nav-inner{
+      margin-left: -90px;
+    }
+}
