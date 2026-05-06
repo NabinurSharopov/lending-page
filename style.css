@@ -1952,7 +1952,6 @@ a {
     margin-left: 0px;
   }
 }
-
 .logo-2{
   display: flex;
   align-items: center;
@@ -1991,26 +1990,19 @@ display: block;
   padding: 0 24px;
   gap: 10px;
 }
-
-
-
 .nav1.scrolled {
   background: rgba(9, 20, 43, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
-
 @media (max-width: 480px) {
-  /* Logotipni kichraytirish */
   .img200 {
     width: 45px !important;
   }
   .Toshkent {
     width: 90px !important;
   }
-
-  /* Telefon tugmasini faqat doira shaklidagi ikonka qilish */
   .phone-btn {
     width: 40px !important;
     height: 40px !important;
@@ -2023,10 +2015,8 @@ display: block;
     margin: 0 !important;
   }
   .phone-number {
-    display: none; /* Raqamni yashirish, faqat ikonka qoladi */
+    display: none; 
   }
-
-  /* Til tanlagich (details) qismini kichraytirish */
   summary {
     padding: 5px 8px !important;
     font-size: 13px !important;
@@ -2035,20 +2025,16 @@ display: block;
     width: 20px !important;
     height: 20px !important;
   }
-  
-  /* Burger tugmasi */
-  .burger {
+    .burger {
     padding: 5px;
   }
 }
 
 
-/* Media query ichidagi 456px li qismini butunlay o'chirib tashlang 
-   yoki yuqoridagiga almashtiring. 10px kenglik xato beradi. */
 
 @media (max-width: 456px) {
    .phone-btn {
-      width: 40px !important; /* 10px emas, 40px bo'lishi kerak */
+      width: 40px !important; 
       height: 40px !important;
    }
 }
@@ -2124,7 +2110,7 @@ display: block;
       padding: 7px;
     }
     .dropdown{
-  min-width: 180px;
+     min-width: 180px;
     }
     .h14{
       margin-top: 10px;
@@ -2146,5 +2132,17 @@ display: block;
     }
     .div7{
       width: 350px;
+    }
+    .page-1-ichi{
+      margin-left: -50px;
+    }
+    .div24{
+      margin-left: 0px;
+    }
+    .page5{
+      height: 492px;
+    }
+    .img58{
+      width: 340px;
     }
 }
