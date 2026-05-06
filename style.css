@@ -2052,3 +2052,28 @@ display: block;
       height: 40px !important;
    }
 }
+@media (max-width: 381px) {
+   .nav-inner{
+    margin-left: -65px;
+   }
+   .h14{
+    margin-left: 0px;
+   }
+   .p12{
+    width: 300px;
+    margin-left: 2  0px;
+   }
+   .div10{
+    width: 300px;
+    margin-left: 2px;
+   }
+   .btn5{
+    margin-left: 135px;
+   }
+   .div20{
+    margin-left: 10px;
+   }
+   .div17{
+    margin-left: 44px;
+   }
+}
