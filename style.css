@@ -2115,5 +2115,6 @@ display: block;
     }
     .nav-inner{
       margin-left: -90px;
+      gap: 40px;
     }
 }
