@@ -2174,3 +2174,11 @@ display: block;
 @media (max-width: 360px) {
   .div7 { height: 62px; border-radius: 14px; padding: 0 12px; }
 }
+@media (max-width: 370px) {
+   .div21{
+    margin-left: 39px;
+   }
+   .h16{
+    margin-left: 39px;
+   }
+}
