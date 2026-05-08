@@ -81,8 +81,6 @@
       </button>
     </div>
 </div>
-
-
      </nav>
 
      <div class="nav-mobile" id="navMobile">
@@ -229,7 +227,9 @@
         </div>
         <img class="img58" src="./images/img22.svg" alt="">
       </section>
-      <h1 class="h9">Hamkorlarimiz</h1>
+      <div class="h9kontainer">
+        <h1 class="h9">Hamkorlarimiz</h1>
+      </div>
       <section class="page6">
         <div class="marquee-container">
           <div class="marquee-track">
@@ -245,7 +245,9 @@
         </div>
       </section>
       <br /><br /><br />
-      <h1 class="h10" id="services">Xizmatlar</h1>
+      <div class="h9kontainer">
+        <h1 class="h10" id="services">Xizmatlar</h1>
+      </div>
       <br />
       <section class="page7" >
         <div class="div6">
@@ -283,8 +285,7 @@
             </h2>
             <br />
             <p class="p9">
-              LPU joylas tanlashni tartibga soluvchi normativ-huquqiy hujjatlar
-              bilan tanishtirish.....
+              Qiziqtirgan LPU turi va tipi bo'yicha batafsil ma'lumot berish
             </p>
           </div>
         </div>
@@ -319,12 +320,14 @@
         </a>
       </section> 
       <br /><br /><br /><br  />
-      <div id="blog">
-        <h1 class="h10" >Bizning <span class="span1">mijozlarimiz</span></h1>
-        <p class="p10">
-          Tibbiyot sifati va jarayonlarini yaxshilash uchun kerakli barcha
-          xizmatlar bir joyda, qulay va samarali yechimlar bilan.
-        </p>
+      <div class="h9kontainer">
+        <div id="blog">
+          <h1 class="h10" >Bizning <span class="span1">mijozlarimiz</span></h1>
+          <p class="p10">
+            Tibbiyot sifati va jarayonlarini yaxshilash uchun kerakli barcha
+            xizmatlar bir joyda, qulay va samarali yechimlar bilan.
+          </p>
+        </div>
       </div>
       <br /><br />
       <section>
@@ -391,11 +394,13 @@
         </div>
       </section>
       <section class="page8" >
-        <h1 class="h13" id="faq">
-          FAQ - <span class="span1">savollar va javoblar</span>
-        </h1>
+        <div class="h9kontainer">
+          <h1 class="h13" id="faq">
+            FAQ - <span class="span1">savollar va javoblar</span>
+          </h1>
+        </div>
         <div class="faq-container">
-          <div class="faq-item">
+          <div class="faq-item active">
             <div class="faq-header">
               <span class="faq-question"
                 >Qanday qilib shifokorga yozilish mumkin?</span
@@ -532,34 +537,32 @@
               <label for="fname">Ism-familiya</label>
               <br />
               <input type="text" placeholder="Ismingizni kiriting" /><br />
-              <label for="fname">Telefon raqam</label><br />
-              <div class="input-wrapper">
-                <img src="./images/img4.svg" alt="uz" class="flag-icon" />
-                <input type="text" placeholder="+998" />
-              </div>
-
+            <label for="fname">Telefon raqam</label><br />
+<div class="input-wrapper">
+  <img src="./images/img4.svg" alt="uz" class="flag-icon" />
+<span style="color: #3D445E; font-size: 15px; white-space: nowrap; font-family: 'Inter', sans-serif;">+998</span>  <input type="tel" id="phoneInput" placeholder="(99) 123 45 67" maxlength="15" />
+</div>
                 <div class="div14">
                   <div
                     class="g-recaptcha"
                     data-sitekey="6LfvCNIsAAAAB--xFIZj6KLZidn6n8SaTSmwEUU"
                   ></div>
                 </div>
-
               <button class="btn5">
                 Jo‘natish <img src="./images/img6.svg" alt="" />
               </button>
             </form>
           </div>
         </div>
+        <br><br><br><br><br>
         <footer>
           <div class="div16">
-            <div class="logo-2">
-              <img src="./images/image 200.svg" alt="" />
-              <div>
-                <h1 class="h1">Tashkent</h1>
-                <p class="p1">Health care</p>
-              </div>
-            </div>
+           <a href="./index.html" class="logo-1" style="cursor: pointer; text-decoration: none;">
+    <img class="img200" src="./images/image 200.svg" alt="" />
+    <div>
+      <img class="Toshkent" src="images/boshlogo.svg" alt="">
+    </div>
+  </a>
             <ul class="ul3">
               <li class="li1" data-target="about">Biz haqimizda</li>
               <li class="li1" data-target="services">Xizmatlar</li>

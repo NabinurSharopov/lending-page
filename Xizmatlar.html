@@ -9,107 +9,113 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="padding-top: 70px;">
      <nav class="nav2">
-          <div class="logo-1">
-      <img src="./images/image 200.svg" alt="refresh" onclick="location.reload()" style="cursor: pointer;" />    
-            <div>
-               <img class="Toshkent"  src="images/boshlogo.svg" alt="">
-            </div>
-          </div>
-      <ul class="ul1">
+ <div class="nav-inner">
+   <div class="logo-1">
+  <img src="./images/image 200.svg" alt="refresh" onclick="location.reload()" style="cursor: pointer;" />    
+     <div>
+        <img src="./images/toshkentoq.svg" alt="">
+     </div>
+   </div>
+   <ul class="ul1">
   <li class="li1" onclick="location.href='./index.html#about'">Biz haqimizda</li>
   <li class="li1" onclick="location.href='./Xizmatlar.html#services'">Xizmatlar</li>
   <li class="li1" onclick="location.href='./index.html#blog'">Blog</li>
   <li class="li1" onclick="location.href='./index.html#faq'">FAQ</li>
   <li class="li1" onclick="location.href='./index.html#contact'">Bog'lanish</li>
-</ul>
-          <div class="div2">
-            <a class="phone-btn1" href="tel:+998712000770">
-              <img src="./images/tel.svg" alt="" />
-              <span class="phone-number">+998 71 200 07 70</span>
-            </a>
-            <details id="dd">
-              <summary class="summary2">
-                <img
-                  id="btnFlag"
-                  src="./images/flag.svg"
-                  alt=""
-                  style="
-                    width: 28px;
-                    height: 28px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                  "
-                />
-                <span id="btnCode">UZ</span>
-              <svg class="chevron2" viewBox="0 0 14 14">
-              <polyline points="2,4 7,10 12,4" />
-               </svg>
-              </summary>
+   </ul>
+   <div class="div2">
+     <a class="phone-btn1" href="tel:+998712000770">
+       <img src="./images/tel.svg" alt="" />
+       <span class="phone-number">+998 71 200 07 70</span>
+     </a>
+     <details id="dd">
+       <summary class="summary2">
+         <img
+           id="btnFlag"
+           src="./images/flag.svg"
+           alt=""
+           style="
+             width: 28px;
+             height: 28px;
+             border-radius: 50%;
+             object-fit: cover;
+           "
+         />
+         <span id="btnCode">UZ</span>
+       <svg class="chevron2" viewBox="0 0 14 14">
+       <polyline points="2,4 7,10 12,4" />
+        </svg>
+       </summary>
+  
+       <div class="dropdown">
+     <div
+       class="lang-option active"
+       onclick="pick(this, './images/flag.svg', 'UZ')"
+     >
+       <span class="flag"
+         ><img src="./images/flag.svg" alt=""
+       /></span>
+       <span>O'zbekcha</span>
+       <span class="check">✓</span>
+     </div>
+     <div
+       class="lang-option"
+       onclick="pick(this, './images/flag.svg', 'УЗ')"
+     >
+       <span class="flag"
+         ><img src="./images/flag.svg" alt=""
+       /></span>
+       <span>Ўзбекча</span>
+       <span class="check">✓</span>
+     </div>
+      <div class="lang-option" onclick="pick(this, 'https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13', 'QQ')">
+  <span class="flag"><img style="width: 30px;" src="https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13" alt="" /></span>
+  <span>Qoraqalpoq</span>
+  <span class="check">✓</span>
+  </div>
+     
+     <div
+       class="lang-option"
+       onclick="pick(this, './images/en.svg', 'EN')"
+     >
+       <span class="flag"
+         ><img src="./images/en.svg" alt=""
+       /></span>
+       <span>English</span>
+       <span class="check">✓</span>
+     </div>
+     <div
+       class="lang-option"
+       onclick="pick(this, './images/ru.svg', 'RU')"
+     >
+       <span class="flag"
+         ><img src="./images/ru.svg" alt=""
+       /></span>
+       <span>Русский</span>
+       <span class="check">✓</span>
+     </div>
+   
+   </div>
+     </details>
+  
+   </div>
+ </div>
 
-              <div class="dropdown">
-            <div
-              class="lang-option active"
-              onclick="pick(this, './images/flag.svg', 'UZ')"
-            >
-              <span class="flag"
-                ><img src="./images/flag.svg" alt=""
-              /></span>
-              <span>O'zbekcha</span>
-              <span class="check">✓</span>
-            </div>
-            <div
-              class="lang-option"
-              onclick="pick(this, './images/flag.svg', 'УЗ')"
-            >
-              <span class="flag"
-                ><img src="./images/flag.svg" alt=""
-              /></span>
-              <span>Ўзбекча</span>
-              <span class="check">✓</span>
-            </div>
-             <div class="lang-option" onclick="pick(this, 'https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13', 'QQ')">
-      <span class="flag"><img style="width: 30px;" src="https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13" alt="" /></span>
-      <span>Qoraqalpoq</span>
-      <span class="check">✓</span>
-    </div>
-            
-            <div
-              class="lang-option"
-              onclick="pick(this, './images/en.svg', 'EN')"
-            >
-              <span class="flag"
-                ><img src="./images/en.svg" alt=""
-              /></span>
-              <span>English</span>
-              <span class="check">✓</span>
-            </div>
-            <div
-              class="lang-option"
-              onclick="pick(this, './images/ru.svg', 'RU')"
-            >
-              <span class="flag"
-                ><img src="./images/ru.svg" alt=""
-              /></span>
-              <span>Русский</span>
-              <span class="check">✓</span>
-            </div>
-          
-          </div>
-            </details>
-            
-          </div>
+
     </nav>
 
-    <div class="div21">
-        <a href="./index.html">
-           <p class="p20">Bosh sahifa</p>
-        </a>
-        <p class="p21">• Xizmatlar</p>
+    <div class="h9kontainer">
+      <div class="div21">
+          <a href="./index.html">
+             <p class="p20">Bosh sahifa</p>
+          </a>
+          <p class="p21">• Xizmatlar</p>
+      </div>
+      <h1 class="h16" id="services">Xizmatlar</h1>
     </div>
-    <h1 class="h16" id="services">Xizmatlar</h1>
-
+<br>
 
 <section class="section1">
      <div class="div6">
@@ -433,14 +439,14 @@
             </form>
           </div>
         </div>
-        
+        <br><br><br><br>
         <footer>
           <div class="div16">
             <div class="logo-1">
               <img src="./images/image 200.svg" alt="" />
               <div>
-                <h1 class="h1">Tashkent</h1>
-                <p class="p1">Health care</p>
+                   <img class="Toshkent" src="images/boshlogo.svg" alt="">
+
               </div>
             </div>
             <ul class="ul3">
@@ -494,12 +500,16 @@
             </p>
             <div style="display: flex; align-items: center; gap: 15px">
               <p class="p19">Developed by:</p>
-              <img src="./images/img41.png" alt="" />
+              <img src="./images/img5.svg" alt="" />
             </div>
           </div>
         </footer>
         <br><br>
       </section>
+
+
+      
+
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
      <script src="./script.js"></script>   

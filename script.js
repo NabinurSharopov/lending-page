@@ -861,3 +861,35 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
+
+
+const phoneInput = document.getElementById('phoneInput');
+
+if (phoneInput) {
+  phoneInput.addEventListener('input', function () {
+    // Faqat raqamlarni ol
+    let val = this.value.replace(/\D/g, '');
+    
+    // 9 raqamdan oshmasin
+    val = val.substring(0, 9);
+
+    let formatted = '';
+    if (val.length === 0) {
+      formatted = '';
+    } else if (val.length <= 2) {
+      formatted = '(' + val;
+    } else if (val.length <= 5) {
+      formatted = '(' + val.substring(0, 2) + ') ' + val.substring(2);
+    } else if (val.length <= 7) {
+      formatted = '(' + val.substring(0, 2) + ') ' + val.substring(2, 5) + ' ' + val.substring(5);
+    } else {
+      formatted = '(' + val.substring(0, 2) + ') ' + val.substring(2, 5) + ' ' + val.substring(5, 7) + ' ' + val.substring(7, 9);
+    }
+
+    this.value = formatted;
+  });
+
+  phoneInput.addEventListener('keypress', function (e) {
+    if (!/[0-9]/.test(e.key)) e.preventDefault();
+  });
+}
