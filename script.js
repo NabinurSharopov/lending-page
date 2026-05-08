@@ -824,16 +824,27 @@ document
   .forEach((li) => {
     li.style.cursor = "pointer";
     li.addEventListener("click", () => {
-      // Endi matnga emas, data-target atributiga qaraymiz
       const targetId = li.getAttribute("data-target");
 
       if (targetId) {
         const element = document.getElementById(targetId);
         if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
+          // 1. Menyu balandligini aniqlaymiz (nav1 klassi orqali)
+          const header = document.querySelector(".nav1");
+          const headerHeight = header ? header.offsetHeight : 80;
+
+          // 2. Elementning koordinatasini hisoblaymiz va menyu balandligini ayirib tashlaymiz
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+          // 3. Skrol qilish
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
         }
 
-        // Mobil menyuni yopish (agar mavjud bo'lsa)
+        // Mobil menyuni yopish
         const navMobile = document.getElementById("navMobile");
         const burger = document.getElementById("burger");
         navMobile?.classList.remove("open");

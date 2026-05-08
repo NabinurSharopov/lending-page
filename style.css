@@ -38,7 +38,7 @@ details#dd {
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 19px;
+  gap: 54px;
 }
 .logo-1 {
   display: flex;
@@ -739,10 +739,12 @@ details[open] .chevron2 {
 }
 .marquee-track-left {
   display: flex;
+  gap: 15px;
   width: max-content;
   animation: marquee-left 50s linear infinite;
 }
 .marquee-track-right {
+    gap: 15px;
   display: flex;
   width: max-content;
   animation: marquee-right 50s linear infinite;
@@ -2220,4 +2222,15 @@ display: block;
 .h9kontainer{
   max-width: 1500px;
   margin: auto;
+}
+.h12{
+  color: rgba(68, 216, 244, 1);
+}
+
+#about, #services, #blog, #faq {
+  scroll-margin-top: 100px;  /* nav balandligi + biroz bo'shliq */
+}
+
+#contact {
+  scroll-margin-top: 100px;
 }
