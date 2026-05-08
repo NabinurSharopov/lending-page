@@ -862,6 +862,18 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const nav2 = document.querySelector('.nav2');
+
+if (nav2) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      nav2.classList.add('scrolled');
+    } else {
+      nav2.classList.remove('scrolled');
+    }
+  });
+}
+
 
 const phoneInput = document.getElementById('phoneInput');
 
