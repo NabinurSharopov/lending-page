@@ -353,7 +353,7 @@ details[open] .chevron2 {
   margin-top: 20px;
 }
 .page-1-ichi {
- width: 1500px;
+ max-width: 1500px;
  margin: auto;
   height: 600px;
   padding: 96px 100px;
