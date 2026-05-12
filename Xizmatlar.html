@@ -12,8 +12,8 @@
 <body style="padding-top: 70px;">
      <nav class="nav2">
  <div class="nav-inner">
-   <div class="logo-1">
-  <img src="./images/image 200.svg" alt="refresh" onclick="location.reload()" style="cursor: pointer;" />    
+   <div class="logo-1" onclick="location.reload()" style="cursor: pointer;" >
+  <img src="./images/image 200.svg" alt="refresh"/>    
      <div>
         <img src="./images/toshkentoq.svg" alt="">
      </div>
@@ -58,7 +58,6 @@
          ><img src="./images/flag.svg" alt=""
        /></span>
        <span>O'zbekcha</span>
-       <span class="check">✓</span>
      </div>
      <div
        class="lang-option"
@@ -68,12 +67,10 @@
          ><img src="./images/flag.svg" alt=""
        /></span>
        <span>Ўзбекча</span>
-       <span class="check">✓</span>
      </div>
       <div class="lang-option" onclick="pick(this, 'https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13', 'QQ')">
-  <span class="flag"><img style="width: 30px;" src="https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13" alt="" /></span>
+  <span class="flag"><img style="width: 30px; margin-left: -2px;" src="https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13" alt="" /></span>
   <span>Qoraqalpoq</span>
-  <span class="check">✓</span>
   </div>
      
      <div
@@ -99,11 +96,14 @@
    
    </div>
      </details>
-  
+     <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
    </div>
  </div>
     </nav>
-
        <div class="nav-mobile" id="navMobile">
   <ul class="ul-mobile">
     <li class="li1">Biz haqimizda</li>
@@ -378,7 +378,7 @@
               href="https://yandex.com/maps/?text=улица+Мирзакалон+Исмоилий+дом+2+Ташкент"
               target="_blank"
             >
-              <div class="div10">
+              <div class="div10" style="justify-content: start">
                 <div class="bird">
                   <img src="./images/img1.svg" alt="" />
                 </div>
@@ -429,10 +429,11 @@
               <br />
               <input type="text" placeholder="Ismingizni kiriting" /><br />
               <label for="fname">Telefon raqam</label><br />
-              <div class="input-wrapper">
-                <img src="./images/img4.svg" alt="uz" class="flag-icon" />
-                <input type="text" placeholder="+998" />
-              </div>
+               <div class="input-wrapper">
+       <img src="./images/img4.svg" alt="uz" class="flag-icon" />
+       <span style="color: #3D445E; font-size: 15px; white-space: nowrap; font-family: 'Inter', sans-serif;">+998</span>
+       <input style="margin-left: -15px;" type="tel" id="phoneInput" placeholder="(99) 123 45 67" maxlength="15" />
+       </div>
 
               <div class="div14">
                 <div
