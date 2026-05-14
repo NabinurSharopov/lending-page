@@ -1109,7 +1109,7 @@ input {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: rgba(243, 246, 248, 1);
+  background-color: rgba(247, 247, 248, 1);
   border-radius: 8px;
 }
 
@@ -1712,9 +1712,7 @@ a {
   /* Features */
   .page4 { padding: 0 16px; gap: 8px; }
 
-  @media (max-width: 480px) {
-  .div5 { width: calc(50% - 4px); border-radius: 18px; }
-}
+
 
   .h7 { font-size: 15px; }
   .p7 { font-size: 13px; }
@@ -1766,6 +1764,9 @@ a {
   .div19 { margin-top: 24px; }
   .div20 { flex-direction: column; align-items: flex-start; gap: 8px; padding-bottom: 24px; }
   .p18, .p19 { font-size: 12px; }
+}
+  @media (max-width: 480px) {
+  .div5 { width: calc(50% - 4px); border-radius: 18px; }
 }
 
 /* ================================================
