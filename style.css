@@ -2148,9 +2148,6 @@ display: block;
    }
 }
 @media (max-width: 381px) {
-   .nav-inner{
-    margin-left: -65px;
-   }
    .h14{
     margin-left: 0px;
    }
@@ -2208,10 +2205,7 @@ display: block;
     .p18{
       width: 300px;
     }
-    .nav-inner{
-      margin-left: -90px;
-      gap: 40px;
-    }
+
     .img58{
       margin-top: -90px;
     }
@@ -2335,9 +2329,5 @@ display: block;
     margin-top: -15px;
   }
 }
-@media (max-width: 441px) {
-  .nav2{
-    margin-left: 10px;
-  }
-}
+
 
