@@ -2292,4 +2292,9 @@ display: block;
     margin-left: 10px;
   }
 }
+@media (max-width: 384px) {
+    .img58{
+      margin-top: 29px;
+    }
+}
 
