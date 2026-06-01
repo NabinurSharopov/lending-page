@@ -2036,15 +2036,15 @@ display: block;
   z-index: 999;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   color: black;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  padding: 10px 40px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   transition: box-shadow 0.3s ease;
-  margin: 0 auto;
-  gap: 10px;
 }
 .nav1.scrolled {
   background: rgba(9, 20, 43, 0.95);
@@ -2100,9 +2100,6 @@ display: block;
    }
 }
 @media (max-width: 381px) {
-   .nav-inner{
-    margin-left: -65px;
-   }
    .h14{
     margin-left: 0px;
    }
@@ -2160,10 +2157,7 @@ display: block;
     .p18{
       width: 300px;
     }
-    .nav-inner{
-      margin-left: -90px;
-      gap: 40px;
-    }
+  
     .img58{
       margin-top: -90px;
     }
@@ -2285,11 +2279,6 @@ display: block;
 @media (max-width: 1201px) {
   .p3{
     margin-top: -15px;
-  }
-}
-@media (max-width: 441px) {
-  .nav2{
-    margin-left: 10px;
   }
 }
 
