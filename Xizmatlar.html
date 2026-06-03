@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Xizmatlar — Tashkent Healthcare</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body style="padding-top: 70px;">
+<body class="page-xizmatlar">
      <nav class="nav2">
  <div class="nav-inner">
-   <div class="logo-1" onclick="location.reload()" style="cursor: pointer;" >
-  <img src="./images/image 200.svg" alt="refresh"/>    
+   <a href="./index.html" class="logo-1">
+  <img class="img200" src="./images/image 200.svg" alt="Tashkent Healthcare" />
      <div>
-        <img src="./images/toshkentoq.svg" alt="">
+        <img class="Toshkent" src="./images/toshkentoq.svg" alt="Tashkent Healthcare">
      </div>
-   </div>
+   </a>
    <ul class="ul1">
   <li class="li1" onclick="location.href='./index.html#about'">Biz haqimizda</li>
   <li class="li1" onclick="location.href='./Xizmatlar.html#services'">Xizmatlar</li>
@@ -58,6 +58,7 @@
          ><img src="./images/flag.svg" alt=""
        /></span>
        <span>O'zbekcha</span>
+       <span class="check" aria-hidden="true">✓</span>
      </div>
      <div
        class="lang-option"
@@ -67,10 +68,12 @@
          ><img src="./images/flag.svg" alt=""
        /></span>
        <span>Ўзбекча</span>
+       <span class="check" aria-hidden="true">✓</span>
      </div>
       <div class="lang-option" onclick="pick(this, 'https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13', 'QQ')">
   <span class="flag"><img style="width: 30px; margin-left: -2px;" src="https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13" alt="" /></span>
   <span>Qoraqalpoq</span>
+  <span class="check" aria-hidden="true">✓</span>
   </div>
      
      <div
@@ -81,7 +84,7 @@
          ><img src="./images/en.svg" alt=""
        /></span>
        <span>English</span>
-       <span class="check">✓</span>
+       <span class="check" aria-hidden="true">✓</span>
      </div>
      <div
        class="lang-option"
@@ -91,7 +94,7 @@
          ><img src="./images/ru.svg" alt=""
        /></span>
        <span>Русский</span>
-       <span class="check">✓</span>
+       <span class="check" aria-hidden="true">✓</span>
      </div>
    
    </div>
@@ -106,11 +109,11 @@
     </nav>
        <div class="nav-mobile" id="navMobile">
   <ul class="ul-mobile">
-    <li class="li1">Biz haqimizda</li>
-    <li class="li1">Xizmatlar</li>
-    <li class="li1">Blog</li>
-    <li class="li1">FAQ</li>
-    <li class="li1">Bog‘lanish</li>
+    <li class="li1" onclick="location.href='./index.html#about'">Biz haqimizda</li>
+    <li class="li1" onclick="location.href='./Xizmatlar.html#services'">Xizmatlar</li>
+    <li class="li1" onclick="location.href='./index.html#blog'">Blog</li>
+    <li class="li1" onclick="location.href='./index.html#faq'">FAQ</li>
+    <li class="li1" onclick="location.href='./index.html#contact'">Bog‘lanish</li>
   </ul>
      </div>
 
@@ -127,7 +130,7 @@
 
 <section class="section1">
      <div class="div6">
-          <img src="/images/a1.svg" alt="" />
+          <img src="./images/a1.svg" alt="" />
           <div>
             <h2 class="h11">
               Tibbiy muassasa (LPU) turlari va litsenziya turlari bo'yicha
@@ -141,7 +144,7 @@
           </div>
         </div>
        <div class="div6">
-          <img src="/images/a2.svg" alt="" />
+          <img src="./images/a2.svg" alt="" />
           <div>
             <h2 class="h11">
               LPU joylashuvi uchun yer uchastkasini tanlash bo'yicha maslahat
@@ -154,7 +157,7 @@
           </div>
         </div>
           <div class="div6">
-          <img src="/images/a3.svg" alt="" />
+          <img src="./images/a3.svg" alt="" />
           <div>
             <h2 class="h11">
               LPU turi va unga qo'yiladigan talablar bo'yicha maslahat
@@ -167,7 +170,7 @@
           </div>
         </div>
          <div class="div6">
-          <img src="/images/a4.svg" alt="" />
+          <img src="./images/a4.svg" alt="" />
           <div>
             <h2 class="h11">
               Tibbiy mutaxassisliklarni tanlash bo'yicha maslahat
@@ -180,31 +183,31 @@
           </div>
         </div>
          <div class="div6">
-          <img src="/images/a5.svg" alt="" />
+          <img src="./images/a5.svg" alt="" />
           <div>
             <h2 class="h11">
               Loyihalash uchun Texnik topshiriq tayyorlash
            </h2>
             <br />
-            <p class="p9" style="margin-top: -22px;">
+            <p class="p9">
               Loyiha tashkilotiga taqdim etish uchun LPU loyihalashga texnik topshiriq tayyorlash
             </p>
           </div>
         </div>
           <div class="div6">
-          <img src="/images/a6.svg" alt="" />
+          <img src="./images/a6.svg" alt="" />
           <div>
             <h2 class="h11">
               LPU qurilishi loyihasini tayyorlash
             </h2>
             <br />
-            <p class="p9" style="margin-top: -23px;">
+            <p class="p9">
               LPU qurilish loyihasini tayyorlash va loyiha bilan bog'liq ruxsat <br> hujjatlarini olish
             </p>
           </div>
         </div>
           <div class="div6">
-          <img src="/images/a7.svg" alt="" />
+          <img src="./images/a7.svg" alt="" />
           <div>
             <h2 class="h11">
               LPU qurilish loyihasini Davlat organlari bilan kelishish
@@ -216,43 +219,43 @@
           </div>
         </div>
           <div class="div6">
-          <img src="/images/a8.svg" alt="" />
+          <img src="./images/a8.svg" alt="" />
           <div>
             <h2 class="h11">
               LPU qurilishi jarayonida hamrohlik qilish
            </h2>
             <br />
-            <p class="p9" style="margin-top: -23px;">
+            <p class="p9">
                Loyiha tashkiloti tomonidan muallif nazoratida bevosita ishtirok etish
             </p>
           </div>
         </div>
             <div class="div6">
-          <img src="/images/a9.svg" alt="" />
+          <img src="./images/a9.svg" alt="" />
           <div>
             <h2 class="h11">
               Tanlangan LPU turi va tibbiy mutaxassisliklar o'zaro bog'liqligi va tijorat manfaati nuqtai nazaridan tahlil
            </h2>
             <br />
-            <p class="p9" style="margin-top: 23px;">
+            <p class="p9">
                O'zaro bog'liq tibbiy mutaxassisliklarning bir nechta modellari va ularning tijorat foydasini taqdim etish
             </p>
           </div>
         </div>
             <div class="div6">
-          <img src="/images/a10.svg" alt="" />
+          <img src="./images/a10.svg" alt="" />
           <div>
             <h2 class="h11">
               Tibbiy faoliyat litsenziyasini olish bilan bog'liq barcha darajalarda ruxsat hujjatlarini olishda hamrohlik
            </h2>
             <br />
-            <p class="p9" style="margin-top: 23px;">
+            <p class="p9">
               Arizalar tayyorlash, zarur ruxsat hujjatlarini olish va litsenziya olinguncha hamrohlik qilish
             </p>
           </div>
         </div>
            <div class="div6">
-          <img src="/images/a11.svg" alt="" />
+          <img src="./images/a11.svg" alt="" />
           <div>
             <h2 class="h11">
               Tibbiy faoliyat litsenziyasi olish talablari bo'yicha maslahat
@@ -264,67 +267,67 @@
           </div>
         </div>
              <div class="div6">
-          <img src="/images/a12.svg" alt="" />
+          <img src="./images/a12.svg" alt="" />
           <div>
             <h2 class="h11">
               Tibbiy jihozlar bo'yicha maslahat
            </h2>
             <br />
-            <p class="p9" style="margin-top: -24px;">
+            <p class="p9">
                Tibbiy jihozlarni tanlash, harakatlar algoritmini taqdim etish va jihoz <br> sotib olishda hamrohlik
             </p>
           </div>
         </div>
              <div class="div6">
-          <img src="/images/a13.svg" alt="" />
+          <img src="./images/a13.svg" alt="" />
           <div>
             <h2 class="h11">
               Tibbiy jihozlarni sotib olish va jihozlash
            </h2>
             <br />
-            <p class="p9" style="margin-top: -24px;">
+            <p class="p9">
                Yetkazib berish shartnomalari tuzish va muayyan LPUda jihozlarni qabul qilish hamda o'rnatishda yordam berish
             </p>
           </div>
         </div>
               <div class="div6">
-          <img src="/images/a14.svg" alt="" />
+          <img src="./images/a14.svg" alt="" />
           <div>
             <h2 class="h11">
               Tibbiy jihozlarga ruxsat hujjatlarini olish
            </h2>
             <br />
-            <p class="p9" style="margin-top: -24px;">
+            <p class="p9">
                Tibbiy jihozlarga ruxsat hujjatlarini olish (standartlashtirish va <br> metrologik nazorat tartibidan o'tganligi to'g'risida sertifikatlar)
             </p>
           </div>
         </div>
                <div class="div6">
-          <img src="/images/a15.svg" alt="" />
+          <img src="./images/a15.svg" alt="" />
           <div>
             <h2 class="h11">
               Xodimlarni qidirishda maslahat
            </h2>
             <br />
-            <p class="p9" style="margin-top: -24px;">
+            <p class="p9">
                Tibbiy va boshqa xodimlarga qo'yiladigan talablarni aniqlash va <br> taqdim etilgan hujjatlarni tahlil qilish
             </p>
           </div>
         </div>
                  <div class="div6">
-          <img src="/images/a16.svg" alt="" />
+          <img src="./images/a16.svg" alt="" />
           <div>
             <h2 class="h11">
               LPU faoliyatini raqamlashtirish
            </h2>
             <br />
-            <p class="p9" style="margin-top: -24px;">
+            <p class="p9">
                Klinikani boshqarish uchun muayyan elektron tizimlarni taqdim etish
             </p>
           </div>
         </div>
                     <div class="div6">
-          <img src="/images/a17.svg" alt="" />
+          <img src="./images/a17.svg" alt="" />
           <div>
             <h2 class="h11">
               Tibbiy faoliyatni akkreditatsiyadan o'tkazish bo'yicha o'quv kurslarini o'tkazish
@@ -336,19 +339,19 @@
           </div>
         </div>
                     <div class="div6">
-          <img src="/images/a18.svg" alt="" />
+          <img src="./images/a18.svg" alt="" />
           <div>
             <h2 class="h11">
               Akkreditatsiya (xalqaro va milliy) paytida <br> tashqi kompleks baholashdan o'tishga tayyorlash
            </h2>
             <br />
-            <p class="p9" style="margin-top: 28px;">
+            <p class="p9">
               Baholashdan o'tishga tayyorgarlikda bevosita ishtirok etish
             </p>
           </div>
         </div>
        <div class="div22">
-  <img src="/images/a19.svg" alt="" />
+  <img src="./images/a19.svg" alt="" />
   <div>
     <h2 class="h11">
       Tibbiy faoliyat litsenziyasini olish, uni uzaytirish yoki LPU faoliyati 
@@ -365,7 +368,7 @@
 
 <br><br><br>
 
- <section class="page9">
+ <section class="page9" id="contact">
          <div class="div9">
           <div class="div12">
             <h1 class="h14">Bog‘lanish uchun</h1>
@@ -391,7 +394,7 @@
                 </div>
               </div>
             </a>
-            <a href="">
+            <a href="tel:+998712000770">
               <div class="div10" style="justify-content: start">
                 <div class="bird">
                   <img src="./images/img2.svg" alt="" />
@@ -410,7 +413,7 @@
                 <div>
                   <p class="p13">Elektron pochta manzili</p>
                   <div class="div11">
-                    <p class="p14" style="margin-left: -28px;">info@gmail.com</p>
+                    <p class="p14">info@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -454,16 +457,16 @@
             <div class="logo-1">
               <img src="./images/image 200.svg" alt="" />
               <div>
-                   <img class="Toshkent" src="images/boshlogo.svg" alt="">
+                   <img class="Toshkent" src="./images/boshlogo.svg" alt="">
 
               </div>
             </div>
             <ul class="ul3">
-              <li class="li1">Biz haqimizda</li>
-              <li class="li1" data-target="services">Xizmatlar</li>
-              <li class="li1">Blog</li>
-              <li class="li1">FAQ</li>
-              <li class="li1">Bog‘lanish</li>
+              <li class="li1" data-target="about" onclick="location.href='./index.html#about'">Biz haqimizda</li>
+              <li class="li1" onclick="location.href='./Xizmatlar.html#services'">Xizmatlar</li>
+              <li class="li1" onclick="location.href='./index.html#blog'">Blog</li>
+              <li class="li1" onclick="location.href='./index.html#faq'">FAQ</li>
+              <li class="li1" onclick="location.href='./index.html#contact'">Bog‘lanish</li>
             </ul>
           </div>
           <div class="div17">
@@ -502,7 +505,7 @@
               </div>
             </div>
           </div>
-            <img class="img59" src="./images/chiziq.png" alt="">
+          <div class="img59 footer-line" role="presentation"></div>
           <div class="div20">
             <p class="p18">
               © 2026 Toshkent Healthcare. Barcha huquqlar himoyalangan.

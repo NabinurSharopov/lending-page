@@ -647,9 +647,15 @@ function applyLang(code) {
   setText(".p3", t.hero_desc);
 
   const btn1 = document.querySelector(".btn1");
-  if (btn1) btn1.innerHTML = t.btn1 + ' <img src="./images/img5.png" alt=""/>';
+  if (btn1) {
+    btn1.innerHTML =
+      '<p class="p22">' + t.btn1 + '</p> <img class="btn-arrow" src="./images/btn-arrow.svg" alt=""/>';
+  }
   const btn2 = document.querySelector(".btn2");
-  if (btn2) btn2.innerHTML = t.btn2 + ' <img src="./images/img6.png" alt=""/>';
+  if (btn2) {
+    btn2.innerHTML =
+      '<p class="p22">' + t.btn2 + '</p> <img class="btn-arrow" src="./images/btn-arrow-white.svg" alt=""/>';
+  }
 
   // Stats (page2)
   if (t.stats) {
@@ -730,7 +736,7 @@ function applyLang(code) {
 
   const btn5 = document.querySelector(".btn5");
   if (btn5)
-    btn5.innerHTML = t.send_btn + ' <img src="./images/img40.png" alt=""/>';
+    btn5.innerHTML = t.send_btn + ' <img src="./images/img6.svg" alt=""/>';
 
   // Footer Tarjimalari
   const footerMinistry = document.querySelector(".p17");
@@ -830,7 +836,8 @@ document
         const element = document.getElementById(targetId);
         if (element) {
           // 1. Menyu balandligini aniqlaymiz (nav1 klassi orqali)
-          const header = document.querySelector(".nav1");
+          const header =
+            document.querySelector(".nav1") || document.querySelector(".nav2");
           const headerHeight = header ? header.offsetHeight : 80;
 
           // 2. Elementning koordinatasini hisoblaymiz va menyu balandligini ayirib tashlaymiz
@@ -844,7 +851,9 @@ document
           });
         }
 
-        // Mobil menyuni yopish
+      }
+
+      if (li.closest(".ul-mobile")) {
         const navMobile = document.getElementById("navMobile");
         const burger = document.getElementById("burger");
         navMobile?.classList.remove("open");
@@ -865,13 +874,15 @@ document.addEventListener("click", function (e) {
 // Nav scroll animatsiyasi
 const nav = document.querySelector(".nav1");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 10) {
-    nav.classList.add("scrolled");
-  } else {
-    nav.classList.remove("scrolled");
-  }
-});
+if (nav) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+}
 
 const nav2 = document.querySelector('.nav2');
 
@@ -885,6 +896,145 @@ if (nav2) {
   });
 }
 
+
+function initPartnerMarquee() {
+  const container = document.querySelector(".page6 .marquee-container");
+  const track = document.querySelector(".page6 .marquee-track");
+  if (!container || !track) return;
+
+  if (track._marqueeRaf) {
+    cancelAnimationFrame(track._marqueeRaf);
+    track._marqueeRaf = null;
+  }
+  if (track._marqueeObserver) {
+    track._marqueeObserver.disconnect();
+    track._marqueeObserver = null;
+  }
+
+  const firstSet = track.querySelector(".marquee-set");
+  if (!firstSet) return;
+
+  track.querySelectorAll(".marquee-set:nth-child(n+2)").forEach((set) => set.remove());
+
+  const cloneSet = () => {
+    const copy = firstSet.cloneNode(true);
+    copy.setAttribute("aria-hidden", "true");
+    copy.querySelectorAll("a").forEach((link) => {
+      link.setAttribute("tabindex", "-1");
+    });
+    return copy;
+  };
+
+  const fillTrack = () => {
+    const minWidth = container.offsetWidth * 2 + 1;
+    let guard = 0;
+    while (track.scrollWidth < minWidth && guard < 40) {
+      track.appendChild(cloneSet());
+      guard += 1;
+    }
+    if (track.querySelectorAll(".marquee-set").length < 2) {
+      track.appendChild(cloneSet());
+    }
+  };
+
+  fillTrack();
+
+  const getStride = () => {
+    const sets = track.querySelectorAll(".marquee-set");
+    if (sets.length < 2) return firstSet.offsetWidth;
+    return sets[1].offsetLeft - sets[0].offsetLeft;
+  };
+
+  let position = 0;
+  let lastTime = 0;
+  const speedPxPerSec = 42;
+  let paused = false;
+
+  const tick = (time) => {
+    track._marqueeRaf = requestAnimationFrame(tick);
+    if (paused) return;
+
+    if (!lastTime) lastTime = time;
+    const delta = Math.min((time - lastTime) / 1000, 0.05);
+    lastTime = time;
+
+    const stride = getStride();
+    if (stride <= 0) return;
+
+    position -= speedPxPerSec * delta;
+    while (position <= -stride) {
+      position += stride;
+    }
+
+    track.style.transform = `translate3d(${position}px, 0, 0)`;
+  };
+
+  const start = () => {
+    fillTrack();
+    position = 0;
+    lastTime = 0;
+    track.style.animation = "none";
+    if (track._marqueeRaf) cancelAnimationFrame(track._marqueeRaf);
+    track._marqueeRaf = requestAnimationFrame(tick);
+  };
+
+  const onReady = () => {
+    fillTrack();
+    start();
+  };
+
+  const imgs = [...track.querySelectorAll("img")];
+  const pending = imgs.filter((img) => !img.complete);
+  if (pending.length === 0) {
+    onReady();
+  } else {
+    let loaded = 0;
+    pending.forEach((img) => {
+      img.addEventListener(
+        "load",
+        () => {
+          loaded += 1;
+          if (loaded === pending.length) onReady();
+        },
+        { once: true }
+      );
+    });
+  }
+
+  if (typeof ResizeObserver !== "undefined") {
+    track._marqueeObserver = new ResizeObserver(() => {
+      if (track._marqueeFillPending) return;
+      track._marqueeFillPending = true;
+      requestAnimationFrame(() => {
+        fillTrack();
+        track._marqueeFillPending = false;
+      });
+    });
+    track._marqueeObserver.observe(container);
+    track._marqueeObserver.observe(firstSet);
+  }
+
+  if (!track._marqueeHoverBound) {
+    track._marqueeHoverBound = true;
+    track.addEventListener("mouseenter", () => {
+      paused = true;
+    });
+    track.addEventListener("mouseleave", () => {
+      paused = false;
+      lastTime = 0;
+    });
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initPartnerMarquee);
+}
+window.addEventListener("load", initPartnerMarquee);
+let marqueeResizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(marqueeResizeTimer);
+  marqueeResizeTimer = setTimeout(initPartnerMarquee, 150);
+});
 
 const phoneInput = document.getElementById('phoneInput');
 

@@ -49,23 +49,27 @@
       <div class="lang-option active" onclick="pick(this, './images/flag.svg', 'UZ')">
         <span class="flag"><img src="./images/flag.svg" alt="" /></span>
         <span>O'zbekcha</span>
+        <span class="check" aria-hidden="true">✓</span>
       </div>
       <div class="lang-option" onclick="pick(this, './images/flag.svg', 'УЗ')">
         <span class="flag"><img src="./images/flag.svg" alt="" /></span>
         <span>Ўзбекча</span>
+        <span class="check" aria-hidden="true">✓</span>
       </div>
        <div class="lang-option" onclick="pick(this, 'https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13', 'QQ')">
         <span class="flag"><img style="width: 30px; margin-left: -3px;" src="https://avatars.mds.yandex.net/i?id=1ce4f0725015701203a77c9b55be584298ecf00a-10144593-images-thumbs&n=13" alt="" /></span>
         <span>Qoraqalpoq</span>
+        <span class="check" aria-hidden="true">✓</span>
       </div>
       <div class="lang-option" onclick="pick(this, './images/en.svg', 'EN')">
         <span class="flag"><img src="./images/en.svg" alt="" /></span>
         <span>English</span>
+        <span class="check" aria-hidden="true">✓</span>
       </div>
       <div class="lang-option" onclick="pick(this, './images/ru.svg', 'RU')">
         <span class="flag"><img src="./images/ru.svg" alt="" /></span>
         <span>Русский</span>
-        <span class="check">✓</span>
+        <span class="check" aria-hidden="true">✓</span>
       </div>
     </div>
   </details>
@@ -546,23 +550,31 @@
               bilan bog'laning.
             </p>
             <br />
-            <form action="/action_page.php">
-              <label for="fname">Ism-familiya</label>
+            <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+              <label for="contactName">Ism-familiya</label>
               <br />
-              <input type="text" placeholder="Ismingizni kiriting" /><br />
-            <label for="fname">Telefon raqam</label><br />
+              <input
+                type="text"
+                id="contactName"
+                name="name"
+                placeholder="Ismingizni kiriting"
+                required
+              /><br />
+            <label for="phoneInput">Telefon raqam</label><br />
        <div class="input-wrapper">
        <img src="./images/img4.svg" alt="uz" class="flag-icon" />
        <span style="color: #3D445E; font-size: 15px; white-space: nowrap; font-family: 'Inter', sans-serif;">+998</span>
-       <input style="margin-left: -15px;" type="tel" id="phoneInput" placeholder="(99) 123 45 67" maxlength="15" />
+       <input style="margin-left: -15px;" type="tel" id="phoneInput" name="phone" placeholder="(99) 123 45 67" maxlength="15" required />
        </div>
                 <div class="div14">
                   <div
+                    id="recaptcha-contact"
                     class="g-recaptcha"
-                    data-sitekey="6LfvCNIsAAAAB--xFIZj6KLZidn6n8SaTSmwEUU"
+                    data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                   ></div>
                 </div>
-              <button class="btn5">
+              <p class="form-status" id="formStatus" role="alert" aria-live="polite" hidden></p>
+              <button type="submit" class="btn5">
                 Jo‘natish <img src="./images/img6.svg" alt="" />
               </button>
             </form>
@@ -628,9 +640,12 @@
             </p>
             <div style="display: flex; align-items: center; gap: 15px">
               <p class="p19">Developed by:</p>
-              <a href="https://shifo24.com/en" target="_blank">
-                <img  src="./images/img5.svg" alt="" />
-              </a>
+              <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="./images/shifo.svg" alt="">
+                <a href="https://shifo24.com/en" target="_blank">
+                  <img style="margin-left: 5px; margin-top: 2px;" src="./images/img5.svg" alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </footer>
